@@ -1,0 +1,11 @@
+GET     /todos                    controllers.TodosController.getAll
+GET     /todos/:id                controllers.TodosController.get(id: Integer)
+
++ nocsrf
+POST    /todos                    controllers.TodosController.create(request: Request)
+
++ nocsrf
+PUT     /todos/:id                controllers.TodosController.update(request: Request, id: Integer)
+
++ nocsrf
+DELETE  /todos/:id                controllers.TodosController.delete(id: Integer)
